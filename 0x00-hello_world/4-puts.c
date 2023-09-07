@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *main-entry point
- *return-If successful, non-negative value is returned.
+ *main - A program that prints with puts function
+ *Return: 0 (Success)
  */
 int main(void)
 {
