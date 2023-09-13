@@ -6,34 +6,36 @@
  */
 void print_to_98(int n)
 {
-	int counter;
-
-	if (n == 98)
+	if (n <= 98)
 	{
-		_putchar('0' + n);
-		_putchar('\n');
-		return;
-	}
-
-	if (n > 98)
-	{
-		for (counter = n; counter >= 98; counter--)
+		for (; n <= 98; n++)
 		{
-			_putchar('0' + counter);
-
-			if (counter != 98)
-				_putchar(',');
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
 		}
 	}
 	else
 	{
-		for (counter = n; counter <= 98; counter++)
+		for (; n >= 98; n--)
 		{
-			_putchar('0' + counter);
-			if (counter != 98)
-				_putchar(',');
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
 		}
 	}
-
-	_putchar('\n');
 }
