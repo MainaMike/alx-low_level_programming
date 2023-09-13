@@ -6,12 +6,12 @@
  */
 void print_times_table(int n)
 {
+	int i, j, result;
+
 	if (n < 0 || n > 15)
 	{
 		return;
 	}
-
-	int i, j, result;
 
 	for (i = 0; i <= n; i++)
 	{
@@ -19,16 +19,17 @@ void print_times_table(int n)
 		{
 			result = i * j;
 
-			if  (j == 0)
+			_putchar(result);
+
+			if  (j < n)
 			{
-				printf("%d", result);
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
-				printf(",%3d", result);
+				_putchar('\n');
 			}
 		}
-
-		printf("\n");
 	}
 }
