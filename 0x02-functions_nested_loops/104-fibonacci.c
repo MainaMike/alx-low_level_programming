@@ -13,19 +13,18 @@ int main(void)
 	for (counter = 0; counter < 98; counter++)
 	{
 		sum = fib1 + fib2;
-		printf("%lu", sum);
 
-		fib1 = fib2;
-		fib2 = sum;
-
-		if (counter == 49)
+		if (counter < 49)
 		{
-			printf("\n");
+			printf("%lu, ", sum);
 		}
 		else
 		{
-			printf(", ");
+			printf("%lu\n", sum);
 		}
+
+		fib1 = fib2;
+		fib2 = sum;
 	}
 
 	return (0);
