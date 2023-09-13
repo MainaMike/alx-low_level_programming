@@ -7,27 +7,21 @@
  */
 int main(void)
 {
-	int counter;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	int counter = 98;
+	int fib1 = 1, fib2 = 2, next, i;
 
-	for (counter = 0; counter < 98; counter++)
+	printf("%d, %d", fib1, fib2);
+
+	for (i = 2; i < n; i++)
 	{
-		sum = fib1 + fib2;
-
-		printf("%lu", sum);
-
-		if (counter < 97)
-		{
-			printf(", ");
-		}
-		else
-		{
-			printf("\n");
-		}
+		next = fib1 + fib2;
+		printf(", %d", next);
 
 		fib1 = fib2;
-		fib2 = sum;
+		fib2 = next;
 	}
+
+	printf("\n");
 
 	return (0);
 }
