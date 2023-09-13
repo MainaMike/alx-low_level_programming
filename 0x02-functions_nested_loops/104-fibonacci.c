@@ -14,13 +14,15 @@ int main(void)
 	{
 		sum = fib1 + fib2;
 
-		if (counter < 49)
+		printf("%lu", sum);
+
+		if (counter < 97)
 		{
-			printf("%lu, ", sum);
+			printf(", ");
 		}
 		else
 		{
-			printf("%lu\n", sum);
+			printf("\n");
 		}
 
 		fib1 = fib2;
