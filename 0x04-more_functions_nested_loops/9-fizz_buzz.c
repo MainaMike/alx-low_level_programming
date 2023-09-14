@@ -25,7 +25,6 @@ int main(void)
 		{
 			printf("Fizz ");
 		}
-
 		else if (mult5 == 0)
 		{
 			printf("Buzz ");
