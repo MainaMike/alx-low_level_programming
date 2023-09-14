@@ -33,6 +33,11 @@ int main(void)
 		{
 			printf("%d ", counter);
 		}
+
+		if (counter != 100)
+		{
+			printf(" ");
+		}
 	}
 
 	printf("\n");
