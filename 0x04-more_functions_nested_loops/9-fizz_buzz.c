@@ -10,22 +10,19 @@
  */
 int main(void)
 {
-	int counter, mult3, mult5;
+	int counter;
 
 	for (counter = 1; counter <= 100; counter++)
 	{
-		mult3 = (counter % 3);
-		mult5 = (counter % 5);
-
-		if (mult3 == 0 && mult5 == 0)
+		if ((counter % 3 == 0) && (counter % 5 == 0))
 		{
 			printf("FizzBuzz ");
 		}
-		else if (mult3 == 0)
+		else if (counter % 3 == 0)
 		{
 			printf("Fizz ");
 		}
-		else if (mult5 == 0)
+		else if (counter % 5 == 0)
 		{
 			printf("Buzz ");
 		}
