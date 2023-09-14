@@ -4,7 +4,7 @@
  *
  * @c: number being searched for.
  *
- * Returns: 1 if c is a digit and 0 otherwise.
+ * Return: 1 if c is a digit and 0 otherwise.
  */
 int _isdigit(int c)
 {
