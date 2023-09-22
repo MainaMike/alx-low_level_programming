@@ -8,38 +8,24 @@
  */
 char *leet(char *str)
 {
-	char *result = str;
+	int length, counter;
+	char leetLetters[] = "aAeEoOtTlL";
+	char leetNums[] = "4433007711";
 
-	if (str == NULL)
+	length = 0;
+	while (str[length] != '\0')
 	{
-		return (NULL);
+		counter = 0;
+		while (counter < 10)
+		{
+			if (leetLetters[counter] == str[length])
+			{
+				str[length] = leetNums[counter];
+			}
+			counter++;
+		}
+		length++;
 	}
 
-	while (*str != '\0')
-	{
-		if ((*str == 'a') || (*str == 'A'))
-		{
-			*str = '4';
-		}
-		else if ((*str == 'e') || (*str == 'E'))
-		{
-			*str = '3';
-		}
-		else if ((*str == 'o') || (*str == 'O'))
-		{
-			*str = 'O';
-		}
-		else if ((*str == 't') || (*str == 'T'))
-		{
-			*str = '7';
-		}
-		else if ((*str == 'l') || (*str == 'L'))
-		{
-			*str = '1';
-		}
-
-		str++;
-	}
-
-	return (result);
+	return (str);
 }
