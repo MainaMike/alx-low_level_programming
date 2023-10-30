@@ -4,12 +4,11 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stddef.h>
-
 /**
- * read_textfile - reads a text file and prints to 
- * standard output
- * @filename - name of file to read
- * @letters - number of letters
+ * read_textfile - reads a text file and
+ * prints to standard output
+ * @filename: name of file to read
+ * @letters: number of letters
  * Return: Actual number of letter it could read and print
  */
 size_t read_textfile(const char *filename, size_t letters)
